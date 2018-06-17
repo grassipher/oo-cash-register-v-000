@@ -5,8 +5,12 @@ class CashRegister
     @employee_discount = discount
   end
   
-  def discount(discount)
-    @employee_discount = discount
+  def discount
+    @employee_discount
+  end
+  
+  def total
+    @total
   end
   
 end
