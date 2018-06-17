@@ -12,7 +12,7 @@ class CashRegister
     quantity.times do
       @cart << title
     end
-    @total += ((price * quantity) * (@discount / 100))
+    @total += (price * quantity) 
   end
   
   def apply_discount
