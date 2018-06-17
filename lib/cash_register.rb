@@ -15,7 +15,6 @@ class CashRegister
       @items << title
     end
     @total += (price * quantity) 
-    @last_item.clear
     @last_item_total = (price * quantity) 
   end
   
