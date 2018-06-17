@@ -1,16 +1,16 @@
 class CashRegister
   
   attr_accessor :total, :discount
-  
+  attr_reader : items
   def initialize(discount = 0)
-    @cart = []
+    @items = []
     @total = 0
     @discount = discount
   end
   
   def add_item(title, price, quantity = 1)
     quantity.times do
-      @cart << title
+      @items << title
     end
     @total += (price * quantity) 
   end
